@@ -5,10 +5,9 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 // Stacks
 import HomeNavigator from "./HomeNavigator";
-// import CartNavigator from "./CartNavigator";
-// import UserNavigator from "./UserNavigator";
+import CartNavigator from "./CartNavigator";
+import UserNavigator from "./UserNavigator";
 // import AdminNavigator from "./AdminNavigator";
-
 import CartIcon from "../Shared/CartIcon";
 import AuthGlobal from "../Context/store/AuthGlobal";
 
@@ -35,7 +34,7 @@ const Main = () => {
           ),
         }}
       />
-      {/* <Tab.Screen
+      <Tab.Screen
         name="Cart"
         component={CartNavigator}
         options={{
@@ -46,20 +45,20 @@ const Main = () => {
             </View>
           ),
         }}
-      /> */}
+      />
 
       {/* {context.stateUser.user.isAdmin == true ? (
         <Tab.Screen
-        name="Admin"
-        component={AdminNavigator}
-        options={{
-          tabBarIcon: ({ color }) => (
-            <Icon name="cog" color={color} size={30} />
-          ),
-        }}
-      />
-      ): null }
-      
+          name="Admin"
+          component={AdminNavigator}
+          options={{
+            tabBarIcon: ({ color }) => (
+              <Icon name="cog" color={color} size={30} />
+            ),
+          }}
+        />
+      ) : null} */}
+
       <Tab.Screen
         name="User"
         component={UserNavigator}
@@ -68,7 +67,7 @@ const Main = () => {
             <Icon name="user" color={color} size={30} />
           ),
         }}
-      /> */}
+      />
     </Tab.Navigator>
   );
 };

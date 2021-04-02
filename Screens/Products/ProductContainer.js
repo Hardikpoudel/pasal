@@ -14,7 +14,7 @@ import axios from "axios";
 import ProductList from "./ProductList";
 import SearchedProduct from "./SearchedProducts";
 import Banner from "../../Shared/Banner";
-// import CategoryFilter from "./CategoryFilter";
+import CategoryFilter from "./CategoryFilter";
 import baseURL from "../../assets/common/baseUrl";
 
 var { height } = Dimensions.get("window");
@@ -123,11 +123,11 @@ const ProductContainer = (props) => {
           ) : (
             <ScrollView>
               <View>
-                for the banner of the home page
+                {/* for the banner of the home page */}
                 <View>
                   <Banner />
                 </View>
-                {/* <View>
+                <View>
                   <CategoryFilter
                     categories={categories}
                     categoryFilter={changeCtg}
@@ -135,7 +135,7 @@ const ProductContainer = (props) => {
                     active={active}
                     setActive={setActive}
                   />
-                </View> */}
+                </View>
                 {productsCtg.length > 0 ? (
                   <View style={styles.listContainer}>
                     {productsCtg.map((item) => {
@@ -158,7 +158,6 @@ const ProductContainer = (props) => {
           )}
         </Container>
       ) : (
-        // Loading
         <Container style={[styles.center, { backgroundColor: "#f2f2f2" }]}>
           <ActivityIndicator size="large" color="red" />
         </Container>
@@ -173,7 +172,7 @@ const styles = StyleSheet.create({
     backgroundColor: "gainsboro",
   },
   listContainer: {
-    height: height,
+    // height: height,
     flex: 1,
     flexDirection: "row",
     alignItems: "flex-start",

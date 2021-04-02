@@ -6,7 +6,7 @@ import {
   Text,
   ScrollView,
   Button,
-} from "react-native";
+} from "react-native"; //../../Shared/StyledComponents/EasyButton
 import { Left, Right, Container, H1 } from "native-base";
 import Toast from "react-native-toast-message";
 import EasyButton from "../../Shared/StyledComponents/EasyButton";

@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { LogBox } from "react-native";
+import { LogBox, AppRegistry } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import Toast from "react-native-toast-message";
 
@@ -19,7 +19,8 @@ import Header from "./Shared/Header";
 
 LogBox.ignoreAllLogs(true);
 
-export default function App() {
+const App = () => {
+  // console.log("hello world third time");
   return (
     <Auth>
       <Provider store={store}>
@@ -31,4 +32,8 @@ export default function App() {
       </Provider>
     </Auth>
   );
-}
+};
+
+export default App;
+
+AppRegistry.registerComponent("albums", () => App);
