@@ -3,10 +3,11 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { View } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 
-// Stacks
+// importing stack navigation for the home, cart and user
 import HomeNavigator from "./HomeNavigator";
 import CartNavigator from "./CartNavigator";
 import UserNavigator from "./UserNavigator";
+
 // import AdminNavigator from "./AdminNavigator";
 import CartIcon from "../Shared/CartIcon";
 import AuthGlobal from "../Context/store/AuthGlobal";

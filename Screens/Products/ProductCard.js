@@ -26,6 +26,7 @@ const ProductCard = (props) => {
           uri: image
             ? image
             : "https://cdn.pixabay.com/photo/2012/04/01/17/29/box-23649_960_720.png",
+          // image : "http://10.0.2.2:3000/public/uploads/kcha.png-1617386600254.png",
         }}
       />
       <View style={styles.card} />

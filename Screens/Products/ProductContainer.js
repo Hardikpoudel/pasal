@@ -7,6 +7,8 @@ import {
   ScrollView,
   Dimensions,
 } from "react-native";
+
+//native base is a cross platform UI component used in react-native
 import { Container, Header, Icon, Item, Input, Text } from "native-base";
 import { useFocusEffect } from "@react-navigation/native";
 import axios from "axios";
@@ -38,12 +40,13 @@ const ProductContainer = (props) => {
       axios
         .get(`${baseURL}products`)
         .then((res) => {
+          //response data from the api called from the base
           setProducts(res.data);
           setProductsFiltered(res.data);
           setProductsCtg(res.data);
           setInitialState(res.data);
           setLoading(false);
-        })
+        }) //if the api is not loaded or incorrect
         .catch((error) => {
           console.log("Api call error");
         });
@@ -116,6 +119,8 @@ const ProductContainer = (props) => {
             </Item>
           </Header>
           {focus == true ? (
+            // we need to pass the navigation props
+            // so as the productlist component recognize it
             <SearchedProduct
               navigation={props.navigation}
               productsFiltered={productsFiltered}
@@ -139,6 +144,8 @@ const ProductContainer = (props) => {
                 {productsCtg.length > 0 ? (
                   <View style={styles.listContainer}>
                     {productsCtg.map((item) => {
+                      // we nned to pass the navigation props
+                      //so as the productlist component recognize it
                       return (
                         <ProductList
                           navigation={props.navigation}
