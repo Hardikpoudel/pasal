@@ -5,7 +5,7 @@ import { Text, Left, Right, ListItem, Thumbnail, Body } from "native-base";
 const CartItem = (props) => {
   const data = props.item.item.product;
   return (
-    <ListItem style={styles.listItem} key={Math.random()} avatar>
+    <ListItem style={styles.listItem} avatar>
       <Left>
         <Thumbnail
           source={{
@@ -28,16 +28,16 @@ const CartItem = (props) => {
 };
 
 const styles = StyleSheet.create({
-    listItem: {
-        alignItems: 'center',
-        backgroundColor: 'white',
-        justifyContent: 'center'
-    },
-    body: {
-        margin: 10,
-        alignItems: 'center',
-        flexDirection: 'row'
-    }
-})
+  listItem: {
+    alignItems: "center",
+    backgroundColor: "white",
+    justifyContent: "center",
+  },
+  body: {
+    margin: 10,
+    alignItems: "center",
+    flexDirection: "row",
+  },
+});
 
 export default CartItem;

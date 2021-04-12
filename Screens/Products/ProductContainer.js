@@ -1,3 +1,4 @@
+//used to callback http methods when entering the component
 import React, { useState, useCallback } from "react";
 import {
   View,
@@ -31,6 +32,8 @@ const ProductContainer = (props) => {
   const [initialState, setInitialState] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  //with useFocusEffect and useCallBack allows us to make call
+  //if there is change in data
   useFocusEffect(
     useCallback(() => {
       setFocus(false);

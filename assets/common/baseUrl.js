@@ -1,6 +1,7 @@
 import { Platform } from "react-native";
 
-let baseURL = "";
+// url deployed in heroko
+// let baseURL = "https://pasal-server.herokuapp.com/api/v1/";
 // emulator has seperate host address from local host address
 {
   Platform.OS == "android"

@@ -8,7 +8,7 @@ import HomeNavigator from "./HomeNavigator";
 import CartNavigator from "./CartNavigator";
 import UserNavigator from "./UserNavigator";
 
-// import AdminNavigator from "./AdminNavigator";
+import AdminNavigator from "./AdminNavigator";
 import CartIcon from "../Shared/CartIcon";
 import AuthGlobal from "../Context/store/AuthGlobal";
 
@@ -48,7 +48,7 @@ const Main = () => {
         }}
       />
 
-      {/* {context.stateUser.user.isAdmin == true ? (
+      {context.stateUser.user.isAdmin == true ? (
         <Tab.Screen
           name="Admin"
           component={AdminNavigator}
@@ -58,7 +58,7 @@ const Main = () => {
             ),
           }}
         />
-      ) : null} */}
+      ) : null}
 
       <Tab.Screen
         name="User"
