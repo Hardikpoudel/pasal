@@ -1,5 +1,5 @@
 # pasal
-ecommerce mobile app using react-native
+###ecommerce mobile app using react-native
 
 npm install
 you need to change the baseURL of the backnd server which is located in (assets\common\baseURL)
