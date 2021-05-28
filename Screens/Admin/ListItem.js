@@ -72,7 +72,7 @@ const ListItem = (props) => {
                 }}
                 onLongPress={() => setModalVisible(true)}
                 style={[styles.container, {
-                    backgroundColor: props.index % 2 == 0 ? "white" : "gainsboro"
+                    backgroundColor: props.index % 2 == 0 ? "white" : "#D2E7AC"
                 }]}
             >
                 <Image 

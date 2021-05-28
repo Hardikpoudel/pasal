@@ -119,6 +119,8 @@ const OrderCard = (props) => {
           <Text>Price: </Text>
           <Text style={styles.price}>$ {props.totalPrice}</Text>
         </View>
+
+        {/* checking if the edit mode is enable or not for the normal user to edit */}
         {props.editMode ? (
           <View>
             <Picker
@@ -148,6 +150,7 @@ const OrderCard = (props) => {
 
 const styles = StyleSheet.create({
   container: {
+    borderRadius: 10,
     padding: 20,
     margin: 10,
     borderRadius: 10,

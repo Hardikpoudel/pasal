@@ -3,9 +3,11 @@ import AsyncStorage from "@react-native-community/async-storage"
 import Toast from "react-native-toast-message"
 import baseURL from "../../assets/common/baseUrl"
 
+//defining current user as the constant
 export const SET_CURRENT_USER = "SET_CURRENT_USER";
 
 export const loginUser = (user, dispatch) => {
+    //native api call request i.e. fetch
     fetch(`${baseURL}users/login`, {
         method: "POST",
         body: JSON.stringify(user),
@@ -29,7 +31,7 @@ export const loginUser = (user, dispatch) => {
         Toast.show({
             topOffset: 60,
             type: "error",
-            text1: "Please provide correct credentials",
+            text1: "The user is not registered.",
             text2: ""
         });
         logoutUser(dispatch)

@@ -53,8 +53,8 @@ const Login = (props) => {
       />
       <View style={styles.buttonGroup}>
         {error ? <Error message={error} /> : null}
-        <EasyButton large primary onPress={() => handleSubmit()}>
-          <Text style={{ color: "white" }}>Login</Text>
+        <EasyButton large style={{backgroundColor:"#D2E7AC"}} onPress={() => handleSubmit()}>
+          <Text style={{ color: "black" }}>Login</Text>
         </EasyButton>
       </View>
       <View style={[{ marginTop: 40 }, styles.buttonGroup]}>

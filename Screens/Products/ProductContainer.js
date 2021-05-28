@@ -179,7 +179,7 @@ const ProductContainer = (props) => {
 const styles = StyleSheet.create({
   container: {
     flexWrap: "wrap",
-    backgroundColor: "gainsboro",
+    backgroundColor: "#D2E7AC",
   },
   listContainer: {
     // height: height,
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "flex-start",
     flexWrap: "wrap",
-    backgroundColor: "gainsboro",
+    backgroundColor: "#D2E7AC",
   },
   center: {
     justifyContent: "center",

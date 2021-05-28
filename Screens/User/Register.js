@@ -91,8 +91,8 @@ const Register = (props) => {
           {error ? <Error message={error} /> : null}
         </View>
         <View>
-          <EasyButton large primary onPress={() => register()}>
-            <Text style={{ color: "white" }}>Register</Text>
+          <EasyButton large style={{backgroundColor:"#D2E7AC"}} onPress={() => register()}>
+            <Text style={{ color: "black" }}>Register</Text>
           </EasyButton>
         </View>
         <View>

@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
     listHeader: {
         flexDirection: 'row',
         padding: 5,
-        backgroundColor: 'gainsboro'
+        backgroundColor: '#D2E7AC'
     },
     headerItem: {
         margin: 3,

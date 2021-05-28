@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { View, FlatList, Text } from "react-native";
 import axios from "axios";
+import AsyncStorage from "@react-native-community/async-storage";
 import baseURL from "../../assets/common/baseUrl";
 import { useFocusEffect } from "@react-navigation/native";
 
@@ -19,10 +20,15 @@ const Orders = (props) => {
   );
 
   const getOrders = () => {
-    axios
-      .get(`${baseURL}orders`)
-      .then((x) => {
-        setOrderList(x.data);
+    AsyncStorage.getItem("jwt")
+      .then((res) => {
+        axios
+          .get(`${baseURL}orders`, {
+            headers: { Authorization: `Bearer ${res}` },
+          })
+          .then((x) => {
+            setOrderList(x.data);
+          });
       })
       .catch((error) => console.log(error));
   };

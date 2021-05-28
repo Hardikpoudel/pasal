@@ -19,7 +19,7 @@ const ProductList = (props) => {
         props.navigation.navigate("Product Detail", { item: item })
       }
     >
-      <View style={{ width: width / 2, backgroundColor: "gainsboro" }}>
+      <View style={{ width: width / 2, backgroundColor: "#D2E7AC" }}>
         <ProductCard {...item} />
       </View>
     </TouchableOpacity>

@@ -192,7 +192,7 @@ const ProductForm = (props) => {
     return (
        <FormContainer title="Add Product">
            <View style={styles.imageContainer}>
-               <Image style={styles.image} source={{uri: mainImage}}/>
+               <Image style={styles.image} source={{uri: mainImage? mainImage: 'https://cdn.pixabay.com/photo/2012/04/01/17/29/box-23649_960_720.png'}}/>
                <TouchableOpacity onPress={pickImage} style={styles.imagePicker}>
                    <Icon style={{ color: "white"}} name="camera"/>
                </TouchableOpacity>
